@@ -30,8 +30,8 @@ void inserirNavio(int orientacao, int col, int linha, int tamanho, int segundaTe
                 break;
             }
             else {
-                inserirNavio(0, col, linha, tamanho, 1);
                 navios--;
+                inserirNavio(0, col, linha, tamanho, 1);
                 break;
             }
         }
@@ -45,8 +45,8 @@ void inserirNavio(int orientacao, int col, int linha, int tamanho, int segundaTe
                 break;
             }
             else {
-                inserirNavio(1, col, linha, tamanho, 1);
                 navios--;
+                inserirNavio(1, col, linha, tamanho, 1);
                 break;
             }
         }
@@ -69,6 +69,7 @@ void configurarNavios() {
 
     for (int i = 0; i < quantidade; i++) {
         int col, linha, tamanho;
+
         printf("\nNAVIO %i :.\n", i + 1);
         printf("Coluna: ");
         scanf(" %d", &col);
